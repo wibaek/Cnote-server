@@ -11,6 +11,8 @@ FastAPI 기반의 텍스트 및 음성 보정 API 서버입니다.
 > `uv`는 pip + virtualenv 대체 도구로, 빠르고 가볍습니다.
 
 ```bash
+brew install brew
+# 또는
 curl -Ls https://astral.sh/uv/install.sh | sh
 ```
 
