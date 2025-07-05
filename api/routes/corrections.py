@@ -15,3 +15,12 @@ def post_correction(payload: CorrectionRequest):
         raw_text=payload.raw_text,
         corrected_text=correct_text(payload.raw_text),
     )
+
+
+@router.get("/{correction_id}", response_model=CorrectionResponse)
+def get_correction(correction_id: str):
+    return CorrectionResponse(
+        id=correction_id,
+        raw_text="오늘은 날씨가 맑스니다.",
+        corrected_text="오늘은 날씨가 맑습니다.",
+    )
