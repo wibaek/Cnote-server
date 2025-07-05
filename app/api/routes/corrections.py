@@ -1,9 +1,9 @@
 from fastapi import APIRouter
 import uuid
 
-from api.models.request import CorrectionRequest
-from api.models.response import CorrectionResponse
-from services.correction import correct_text
+from app.api.models.request import CorrectionRequest
+from app.api.models.response import CorrectionResponse
+from app.services.correction import correct_text
 
 router = APIRouter()
 
