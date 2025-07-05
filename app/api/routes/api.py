@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from api.routes import audios, corrections
+from app.api.routes import audios, corrections
 
 router = APIRouter()
 router.include_router(corrections.router, tags=["correction"], prefix="/v1/corrections")

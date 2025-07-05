@@ -1,5 +1,5 @@
-from api.routes.api import router as api_router
-from core.config import DEBUG, PROJECT_NAME, VERSION
+from app.api.routes.api import router as api_router
+from app.core.config import DEBUG, PROJECT_NAME, VERSION
 from fastapi import FastAPI
 
 
